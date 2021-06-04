@@ -16,6 +16,9 @@ public class AddressBook {
         // elements ending with s
         stream.filter(str -> str.startsWith("S"))
             .forEach(System.out::println);
-    
+   
+	 stream.filter(str -> str.length() > 3)
+        .forEach(System.out::println);
+     
     }
 }
